@@ -2,15 +2,13 @@ package model;
 
 import java.time.LocalDate;
 
-// Type your code
 public class Bus{
+	
 	private int noOfPersons;
 	private String busType;
 	private int rates;
 	private LocalDate date;
-	
-	
-	public Bus(int noOfPersons, String busType, int rates, LocalDate date) {
+	public Bus(int noOfPersons,  int rates,String busType, LocalDate date) {
 		super();
 		this.noOfPersons = noOfPersons;
 		this.busType = busType;

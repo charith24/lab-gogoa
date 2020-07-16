@@ -2,7 +2,6 @@ package model;
 
 import java.time.LocalDate;
 
-// Type your code
 public class Hotel{
 	private int noOfPersons;
 	private String roomType;
@@ -10,10 +9,6 @@ public class Hotel{
 	private String occupancy;
 	private LocalDate fromdate;
 	private LocalDate todate;
-	
-	
-	
-	
 	public Hotel(int noOfPersons, String roomType, int rates, String occupancy, LocalDate fromdate, LocalDate todate) {
 		super();
 		this.noOfPersons = noOfPersons;
@@ -23,7 +18,7 @@ public class Hotel{
 		this.fromdate = fromdate;
 		this.todate = todate;
 	}
-	 public int getNoOfPersons() {
+	public int getNoOfPersons() {
 		return noOfPersons;
 	}
 	public void setNoOfPersons(int noOfPersons) {

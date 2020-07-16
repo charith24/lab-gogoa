@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+// Uncomment the below code to test your application
 
 import static org.junit.Assert.*;
 
@@ -78,10 +78,10 @@ public class TestFareCalculator {
 	@Test
 	public void testTrainMethod() {
 		LocalDate ld = LocalDate.of(2020, 02, 03);
-		Train train = new Train(2,1500,"nonac",ld);
+		Train train = new Train(2,"nonac",1500,ld);
 		assertEquals(3000,fare.book(train),0);
 		try {
-			Train train1 = new Train(0,0,null,null);
+			Train train1 = new Train(0,null,0,null);
 			fare.book(train1);
 		}
 		catch(Exception e) {
@@ -89,4 +89,3 @@ public class TestFareCalculator {
 		}
 	}
 }
-*/
